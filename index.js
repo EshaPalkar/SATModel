@@ -103,11 +103,13 @@ var tests = require('./controllers/test_controller.js');
 app.use('/', tests);
 
 // Server Ready ////////////////////////////////////////////////////////////
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 app.listen(port);
 console.log('listening on ' + port);
 
 // catch-all handlebars
-app.use(function(err, req, res, next) {
-    console.log(err);
-});
+//app.use(function(err, req, res, next) {
+//    console.log(err);
+//});
+
+
